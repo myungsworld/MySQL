@@ -13,7 +13,7 @@
     db.Clauses(clause.OrderBy{
       Expression: clause.Expr{SQL: "FIELD(id,?)", Vars: []interface{}{[]int{1, 2, 3}}, WithoutParentheses: true},
     }).Find(&User{})
-// SELECT * FROM users ORDER BY FIELD(id,1,2,3)
+    // SELECT * FROM users ORDER BY FIELD(id,1,2,3)
 ```
 - Err
     - localhost:3306: Address already in use -> 
@@ -25,4 +25,6 @@
         - TeacherID int `json:"teacher_id"
         - Teacher *Teacher `json:"teacher" gorm:"constraint:OnUpdate:CASCADE,OnDelete:SET NULL;"`
     - Eroor 1452:  Cannot add or update a child row: a foreign key constraint fails
+        - 말 그대로 외래키 제약조건에 충족하지 못했다 이말이다
+        
 
