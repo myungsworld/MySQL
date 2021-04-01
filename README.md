@@ -28,3 +28,4 @@
         - 말 그대로 외래키 제약조건에 충족하지 못했다 이말이다
         
 
+- [Index](https://zorba91.tistory.com/292) 
