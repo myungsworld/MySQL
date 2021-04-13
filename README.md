@@ -4,7 +4,11 @@
     - Take 와 Find 의 차이 
         - Take : 현재 이 테이블의 record가 없으면 에러 반환
         - Find : 현재 이 테이블의 레코드가 없어도 에러를 반환하지 않고 빈 테이블을 반환 
+    - Distinct 
+        - 찾고자 하는 컬럼의 중복을 제거(?) 하는 옵션 
+        - ex Distinct("name","phone_number").Find(&tables): name과 phone_number 에서 name이 같아도 phone_number의 값이 중복이 아니니 둘다 반환   
     - 오름차순 내림 차순
+    
 ```go
     db.Order("age desc, name").Find(&users)
     // SELECT * FROM users ORDER BY age desc, name;
