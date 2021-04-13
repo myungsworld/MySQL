@@ -31,5 +31,9 @@
     - Eroor 1452:  Cannot add or update a child row: a foreign key constraint fails
         - 말 그대로 외래키 제약조건에 충족하지 못했다 이말이다
         
+    - Error 1064: Check the manual that corresponds to your MySQL server version for the right syntax to use near 'OFFSET 2' at line 1
+        - ->
+        - you can't use offset without limit 
+        - 그럼 gorm 공홈에 
 
 - [Index](https://zorba91.tistory.com/292) 
