@@ -34,6 +34,8 @@
     - Error 1064: Check the manual that corresponds to your MySQL server version for the right syntax to use near 'OFFSET 2' at line 1
         - ->
         - you can't use offset without limit 
-        - 그럼 gorm 공홈에 
+        - 그럼 공홈에 3번째 달락은 뭐고 
+        - ![스크린샷 2021-04-13 오후 2 11 43](https://user-images.githubusercontent.com/56465854/114499986-2e277d00-9c62-11eb-914c-cfab1ebd80b1.png)
+
 
 - [Index](https://zorba91.tistory.com/292) 
