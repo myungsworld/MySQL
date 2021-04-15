@@ -1,6 +1,6 @@
 # MySQL
 
-- GORM
+- GORM for Go Language
     - **Take** 와 **Find** 의 차이 
         - Take : 현재 이 테이블의 record가 없으면 에러 반환
         - Find : 현재 이 테이블의 레코드가 없어도 에러를 반환하지 않고 빈 테이블을 반환 
@@ -16,6 +16,10 @@
         - 이 Soft Delete를 한 필드를 찾거나 완전 삭제하기 위해 Unscoped가 사용됨
         - ex) db.Unscoped().Where(" id = ? ", userId).Find()
         - ex) db.Unscoped().Delete(&tables)
+    - **Expr** 
+        - 디비 변경할때 추가하거나 빼서 저장하는 기능
+        - ex) db.Update("name", gorm.Expr("name + ", "짱")) 
+
     - 오름차순 내림 차순
     
 ```go
