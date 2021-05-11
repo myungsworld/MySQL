@@ -10,7 +10,7 @@
     - **Unscoped**
         - Soft Delete 같은 기능을 다루기 위한 기능 
         - **Soft Delete** 
-            - ~~디비에서 실제로 삭제하진 않고 query 할때 안나오는 기능이라고 해야 되나 뭐 여튼 븅신같은 기능임에는 틀림 없다 
+            - 디비에서 실제로 삭제하진 않고 query 할때 안나오는 기능이라고 해야 되나 ~~뭐 여튼 븅신같은 기능임에는 틀림 없다~~ 
             - 내가 틀렸다 죤내이 유용한 기능이다 내가 사과한다 아이 오폴로자이즈
             - 조건 : table에 DeletedAt `json:"deleted_at"` 필드가 있고 Delete 실행하면 자동으로 Soft Delete 가 일어남  
         - 이 Soft Delete를 한 필드를 찾거나 완전 삭제하기 위해 Unscoped가 사용됨
