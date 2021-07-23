@@ -19,7 +19,7 @@
     - **Expr** 
         - 디비 변경할때 추가하거나 빼서 저장하는 기능
         - ex) db.Update("name", gorm.Expr("name + ", "짱"))
-    - [**SubQuery**](https://gorm.io/docs/advanced_query.html#SubQuery)
+    - [**SubQuery**](https://snowple.tistory.com/360y)
         - 걍 gorm 쓰려고 하지말고 raw 로 짜는게 속편함  
         - 이거 ㄹㅇ임    
 
