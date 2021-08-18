@@ -61,7 +61,7 @@
 - [Index](https://zorba91.tistory.com/292)  
 
 - MySQL 시간별 조회
-    - 하루에 특정시간별 데이터 양 조회, ex)현재까지의 9시부터 19시 사이의 시간별 데이터 양 
+- 하루에 특정시간별 데이터 양 조회, ex)현재까지의 9시부터 19시 사이의 시간별 데이터 양 
 ```mysql
 SELECT HOUR(시간컬럼) as HOUR , COUNT(시간컬럼) as COUNT
 FROM 조회할 테이블
@@ -70,7 +70,7 @@ GROUP BY HOUR HAVING HOUR BETWEEN 9 AND 19
 ORDER BY HOUR ASC
 ```
 
-   - 하루에 특정시간별 데이터 양 조회 + 빈값도 출력 
+- 하루에 특정시간별 데이터 양 조회 + 빈값도 출력 
 ```mysql
 SET @hour := -1
 
