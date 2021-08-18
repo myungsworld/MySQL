@@ -71,4 +71,10 @@ ORDER BY HOUR ASC
 ```
 
    - 하루에 특정시간별 데이터 양 조회 + 빈값도 출력 
+```mysql
+SET @hour := -1
 
+SELECT (@hour := @hour + 1) as HOUR,(SELECT COUNT(*) FROM 조회할 테이블 WHERE 시간컬럼 = @hour ) as COUNT
+FROM 조회할 테이블
+WHERE @hour < 23
+```
