@@ -62,7 +62,7 @@
 
 - MySQL 시간별 조회
     - 하루에 시간별 데이터 양 조회
-```
+```mysql
 SELECT HOUR(시간컬럼) as HOUR , COUNT(시간컬럼) as COUNT
 FROM 조회할 테이블
 WHERE 시간컬럼 BETWEEN '0000-01-01 00:00:00' AND DATE_FORMAT(now(),'%Y-%m-%d 23:59:59')
