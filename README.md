@@ -60,7 +60,7 @@
 
 - [Index](https://zorba91.tistory.com/292)  
 
-- MySQL 시간별 조회
+**MySQL 시간별 조회**. 
 - 하루에 특정시간별 데이터 양 조회, ex)현재까지의 9시부터 19시 사이의 시간별 데이터 양 
 ```mysql
 SELECT HOUR(시간컬럼) as HOUR , COUNT(시간컬럼) as COUNT
