@@ -49,9 +49,10 @@
         - `N-gram parser`
             - 크기 n만큼 데이터를 인덱스로 파싱해두었다가 사용함    
     - [Gorm Index](https://gorm.io/es_ES/docs/indexes.html)
-    - sql command 
-        - 인덱스 조회 : SHOW INDEXES FROM [Table Name];
-            
+    - 인덱스 조회 : SHOW INDEXES FROM [Table Name];
+        - Collation : 기본적인 정렬 형태 A:오름차순, NULL: 정렬 구분 없음
+        - Cardinality : 해당 인덱스 값의 Unique 값 수
+        - Index Type : 인덱스 모드 ( BTREE , FULLTEXT , HASH , TREE )    
 
 - Err
     - localhost:3306: Address already in use -> 
