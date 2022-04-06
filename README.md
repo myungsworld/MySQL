@@ -53,7 +53,8 @@
         - Collation : 기본적인 정렬 형태 A:오름차순, NULL: 정렬 구분 없음
         - Cardinality : 해당 인덱스 값의 Unique 값 수
         - Index Type : 인덱스 모드 ( BTREE , FULLTEXT , HASH , TREE )    
-
+    - 인덱스 삭제 : 위에서 조회된 key_name 을 기반으로 삭제 
+        - ALTER TABLE [TABLE NAME] DROP FOREIGN KEY [KEY_NAME];
 - Err
     - localhost:3306: Address already in use -> 
         - kill $(lsof -t -i:3306)
