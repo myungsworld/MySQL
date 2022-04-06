@@ -39,21 +39,21 @@
 ```
 
 - **`Index`**
-    - `B-Tree Index` ( 보통 우리가 말하는 Index ) 
+    - **`B-Tree Index`** ( 보통 우리가 말하는 Index ) 
         - 비슷한 형식의 데이터에서 원하는 데이터를 찾는경우 용이
         - 위도 , 경도 , 나이 등등 특정 범위 안에서 찾을때 많이 씀 ex) 위도 -90~ +90 , 나이 0~150  
-    - `Full Text Index` ( 전문 검색 Index )
+    - **`Full Text Index`** ( 전문 검색 Index )
         - 제목 , 컨텐츠의 내용 처럼 유저가 쓰기 나름인 데이터를 토근 단위로 쪼개서 검색에 용이한 인덱스  
         - `Buit in parser` 또는 `Stop-word parser`
             - 공백 기준으로 나눔
         - `N-gram parser`
             - 크기 n만큼 데이터를 인덱스로 파싱해두었다가 사용함    
     - [Gorm Index](https://gorm.io/es_ES/docs/indexes.html)
-    - 인덱스 조회 : SHOW INDEXES FROM [Table Name];
+    - **인덱스 조회** : SHOW INDEXES FROM [Table Name];
         - Collation : 기본적인 정렬 형태 A:오름차순, NULL: 정렬 구분 없음
         - Cardinality : 해당 인덱스 값의 Unique 값 수
         - Index Type : 인덱스 모드 ( BTREE , FULLTEXT , HASH , TREE )    
-    - 인덱스 삭제 : 위에서 조회된 key_name 을 기반으로 삭제 
+    - **인덱스 삭제** : 위에서 조회된 key_name 을 기반으로 삭제 
         - ALTER TABLE [TABLE NAME] DROP FOREIGN KEY [KEY_NAME];
 - Err
     - localhost:3306: Address already in use -> 
