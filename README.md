@@ -38,6 +38,17 @@
     // SELECT * FROM users ORDER BY FIELD(id,1,2,3)
 ```
 
+- **[Index]**
+    - B-Tree Index ( 보통 우리가 말하는 Index ) 
+        - 비슷한 형식의 데이터에서 원하는 데이터를 찾는경우 용이
+        - 위도 , 경도 , 나이 등등 특정 범위 안에서 찾을때 많이 씀 ex) 위도 -90~ +90 , 나이 0~150  
+    - Full Text Index ( 전문 검색 Index )
+        - 제목 , 컨텐츠의 내용 처럼 유저가 쓰기 나름인 데이터를 토근 단위로 쪼개서 검색에 용이한 인덱스  
+        - Buit in parser 또는 Stop-word parser
+            - 공백 기준으로 나눔
+        - N-gram parser
+            - 크기 n만큼 데이터를 인덱스로 파싱해두었다가 사용함    
+
 - Err
     - localhost:3306: Address already in use -> 
         - kill $(lsof -t -i:3306)
@@ -57,7 +68,7 @@
         - ![스크린샷 2021-04-13 오후 2 11 43](https://user-images.githubusercontent.com/56465854/114499986-2e277d00-9c62-11eb-914c-cfab1ebd80b1.png)
 
 
-- [Index](https://zorba91.tistory.com/292)  
+  
 
 **MySQL 시간별 조회**. 
 - 하루에 특정시간별 데이터 양 조회, ex)현재까지의 9시부터 19시 사이의 시간별 데이터 양 
