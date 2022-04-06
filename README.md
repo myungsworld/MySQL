@@ -48,6 +48,10 @@
             - 공백 기준으로 나눔
         - `N-gram parser`
             - 크기 n만큼 데이터를 인덱스로 파싱해두었다가 사용함    
+    - [Gorm Index](https://gorm.io/es_ES/docs/indexes.html)
+    - sql command 
+        - 인덱스 조회 : SHOW INDEXES FROM [Table Name];
+            
 
 - Err
     - localhost:3306: Address already in use -> 
