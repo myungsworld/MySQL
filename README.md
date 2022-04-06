@@ -55,6 +55,14 @@
         - Index Type : 인덱스 모드 ( BTREE , FULLTEXT , HASH , TREE )    
     - **인덱스 삭제** : 위에서 조회된 key_name 을 기반으로 삭제 
         - ALTER TABLE [TABLE NAME] DROP FOREIGN KEY [KEY_NAME];
+    
+    - **`FULLTEXT`인덱스를 이용한 쿼리**
+        - show variables like '%ft_min%' 을 검색하면 INNO DB = 3 , MYSQL = 4 로 되어있는데 검색을 위한 디폴트 최소 글자수
+        - `SELECT * FROM [TABLE NAME] WHERE MATCH([COLUMN NAME]) AGAINST("*머시기머시기*" IN BOOLEAN MODE)`
+   
+
+
+
 - Err
     - localhost:3306: Address already in use -> 
         - kill $(lsof -t -i:3306)
