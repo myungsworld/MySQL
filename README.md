@@ -59,7 +59,7 @@
     - **`FULLTEXT`인덱스를 이용한 쿼리**
         - show variables like '%ft_min%' 을 검색하면 INNO DB = 3 , MYSQL = 4 로 되어있는데 검색을 위한 디폴트 최소 글자수
         - `SELECT * FROM [TABLE NAME] WHERE MATCH([COLUMN NAME]) AGAINST("*머시기머시기*" IN BOOLEAN MODE)`
-   
+        - gorm -> Where(fmt.Sprintf("MATCH([COLUMN NAME]) AGAINST('*%s*' IN BOOLEAN MODE)", body.NAME))
 
 
 
